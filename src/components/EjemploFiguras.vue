@@ -1,19 +1,20 @@
 <template lang="en">
     <div>
-        <h1>Seleccione a Pikachu:</h1>
+        <h2>Selecciona a Pikachu:</h2>
         <form>
             <input type="radio" id="ditto" name="poke" value="ditto" @click="incorrecta">
-            <label for="ditto"><img :src="ditto" alt=""/></label><br>
+            <label for="ditto"><img :src="ditto" alt=""/></label>
+            
 
             <input type="radio" id="pika" name="poke" value="pika" @click="correcta">
-            <label for="pika"><img :src="pika" alt=""/></label><br>
+            <label for="pika"><img :src="pika" alt=""/></label>
 
             <input type="radio" id="char" name="poke" value="char" @click="incorrecta">
             <label for="char"> <img :src="char" alt=""/></label><br>
         </form>
 
         <br>
-        <h2>Respuesta {{res}}</h2>
+        <h2 id="res">Respuesta {{res}}</h2>
     </div>
 </template>
 <script>
@@ -67,6 +68,6 @@ export default {
     
 }
 </script>
-<style lang="en">
+<style>
     
 </style>
