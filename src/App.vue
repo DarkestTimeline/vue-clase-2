@@ -6,6 +6,7 @@
   <!--<ejemploPreguntas/>-->
   <!-- <ejemploFiguras/>-->
 <!--</div> -->
+<h1 id="title">Ejercicio #3 - Operaciones Básicas de Matrices en VUE</h1>
 <div id="matrices">
   <h1>Inciso #1</h1>
   <MatrizSumaResta/>
@@ -20,9 +21,14 @@
   <h1>Inciso #5</h1>
 <matrizGJ/>
 </div>
-<h2>Grupo #5 - Sistemas Expertos</h2>
+<h1>Grupo #5 - Sistemas Expertos</h1>
+<ul>
+  <li><strong>Sergio Fabricio Vasquez Castellanos</strong>		- 20142002711</li>
+  <li><strong>Angel Santiago Trochez Briones</strong> 	      - 20151021032</li>
+  <li><strong>Alexi Daniel Saravia</strong>				          - 20132007687</li>
+  <li><strong>Juan De Dios Carranza Motiño</strong> 		      - 20172030613</li>
+</ul>
 <img alt="" src="./assets/sis_logo.png" id="sis_logo">
-  
 </template>
 
 <script>
@@ -73,7 +79,12 @@ input[type=radio] {
   width: 10%;
   height: 2em;
 }
-
+span{
+    word-spacing: 10px;
+  }
+  ul{
+    list-style: none;
+  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -93,6 +104,10 @@ input[type=radio] {
   margin: 0px 150px;
   padding: 5px 20px;
   border-radius: 5%;
+}
+#title{
+  color: navy;
+  background-color: whitesmoke;
 }
 #sis_logo{
   width: 150px;

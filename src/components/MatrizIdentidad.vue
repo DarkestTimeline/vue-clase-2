@@ -3,8 +3,8 @@
         <h2>Matriz Identidad</h2>
         <label for="identidadSize">Tamaño: </label>
         <input type="number" name="identidadSize" min="2" id="identidadSize" v-model.number="identidadSize" >
-
-        <p>{{matrizIdentidad(this.identidadSize)}}</p>
+        <br><br>
+        <span v-for="(item, index) in matrizIdentidad(this.identidadSize)" :key="index">{{item}}<br></span>
     </div>
 </template>
 <script>

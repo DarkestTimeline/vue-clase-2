@@ -3,10 +3,11 @@
         <h2>Matriz Nula</h2>
         <label for="filas">Filas: </label>
         <input type="number" name="filas" min="2" id="filas" v-model.number="filas" >
-        <label for="col">Columnas: </label>
+        <br>
+        <label for="col">Cols: </label>
         <input type="number" name="col" min="2" id="col" v-model.number="col" >
-
-        <p>{{matrizNula(this.col, this.filas)}}</p>
+        <br><br>
+        <span v-for="(item, index) in matrizNula(this.col, this.filas)" :key="index">{{item}}<br></span>
     </div>
 </template>
 <script>
